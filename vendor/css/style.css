@@ -1,0 +1,25 @@
+body{
+    background-color: white;
+}
+
+/*<editor-fold desc=":Login Screen Styling:">*/
+#mainBackgroundDiv{
+    width: 100%;
+}
+
+#topRow{
+    height: 30%;
+    background-color: lightblue;
+}
+
+#centerRow{
+    height: 40%;
+}
+
+#bottomRow{
+    height: 30%;
+    background-color: lightblue;
+}
+
+
+/*</editor-fold>*/
