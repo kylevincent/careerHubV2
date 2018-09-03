@@ -1,0 +1,78 @@
+body{
+    background-color: white;
+}
+
+/*<editor-fold desc="STYLING: Page Layout">*/
+#mainBackgroundDiv{
+    height: 100vh;
+}
+
+#topRow{
+    height: 25%;
+    background-color: lightblue;
+}
+
+#centerRow{
+    height: 50%;
+    text-align: center;
+}
+
+#bottomRow{
+    height: 25%;
+    background-color: lightblue;
+}
+/*</editor-fold>*/
+
+/*<editor-fold desc="STYLING: Login Box">*/
+#login-box-container{
+    background-color: #122b40;
+    height: 100%;
+    display:inline-block;
+    margin: auto;
+    width: 30vw;
+    border-radius: 8px;
+}
+
+#login-box-head{
+    height: 15%;
+    background-color: #1b6d85;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#login-box-content{
+    height: 63%;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+#login-box-footer{
+    height: 10%;
+    background-color: #1b6d85;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.loginFormText{
+    color: white;
+    display:inline-block;
+}
+
+#resetPasswordText{
+    float: right;
+    color: white;
+}
+
+#emailInputBox{
+    margin-bottom: 35px;
+}
+
+#passwordInputBox{
+
+}
+/*</editor-fold>*/
+
