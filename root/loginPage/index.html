@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
     <title>career hub login</title>
+
+    <!--IMPORTING BOOTSTRAP/FOREIGN FILES-->
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
-    <link href="../vendor/css/style.css" rel="stylesheet" type="text/css">
-
-    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- LOCAL JAVASCRIPT AND CSS FILES-->
+    <link href="../vendor/css/style.css" rel="stylesheet" type="text/css">
+    <script src="../vendor/js/script.js"></script>
 </head>
 <body>
 
@@ -27,28 +25,55 @@
 
     <div class="row" id="centerRow">
         <div id="login-box-container">
-            <div id="login-box-head">
-                xx
-            </div>
-
-            <div id="login-box-content">
-                <form>
-                    <div class="form-group" id="emailInputBox">
-                        <label for="usr" class="loginFormText">Email</label>
-                        <input type="text" class="form-control" id="usr">
+            <div class="flipper" id="login-flipper">
+                <div class="front" id="login-front-container">
+                    <div id="login-button-container">
+                        <div class="jumbotron" id="career-place-panel">
+                            <h1 style="font-size: 30px;">The Career Place</h1>
+                            <p style="font-size: 18px"><i>Your Gateway For Jobs...</i></p>
+                        </div>
+                        <button class="btn btn-block" onclick="goToStudentLogin()">
+                            Student Login
+                        </button>
+                        <button class="btn btn-block" onclick="goToEmployeeLogin()">
+                            Employer Login
+                        </button>
                     </div>
-                    <div class="form-group" id="passwordInputBox">
-                        <label for="pwd" class="loginFormText">Password</label>
-                        <label for="pwd" id="resetPasswordText"> Forgot your password?</label>
-                        <input type="password" class="form-control" id="pwd">
+                </div>
+
+                <div class="studentBack" id="student-back-container">
+                    <div id="login-box-head">
+                        <button onclick="backToLoginSelection()" id="backToLoginButton" class="btn-warning">I'm Not a Student</button>
                     </div>
-                </form>
-            </div>
 
-            <div id="login-box-footer">
-                xx
-            </div>
+                    <div id="login-box-content">
+                        <div>
+                            <form>
+                                <div class="form-group" id="emailInputBox">
+                                    <label for="usr" class="loginFormText">Email</label>
+                                    <input type="text" class="form-control" id="usr">
+                                </div>
+                                <div class="form-group" id="passwordInputBox">
+                                    <label for="pwd" class="loginFormText">Password</label>
+                                    <!--TODO: LINK THIS 'forgot your password to nothing (it's not really that important)'-->
+                                    <label for="pwd" id="resetPasswordText"> Forgot your password?</label>
+                                    <input type="password" class="form-control" id="pwd">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
 
+                    <div id="login-box-footer">
+                        <div id="loading-animation-container">
+                            <div class="loader" id="login-loader"></div>
+                        </div>
+                        <button id="login-submit-button" class="btn btn-primary btn-lg"> Log In </button>
+
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 
