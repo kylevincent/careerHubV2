@@ -11,8 +11,8 @@ function goToStudentLogin(){
     var backButton = document.getElementById('backToLoginButton');
     var loginButton = document.getElementById('login-submit-button')
     backButton.innerHTML = "I'm Not a Student!";
-    container.style.webkitTransform = "rotateY(180deg)";
     loginButton.setAttribute("onClick", "goToStudentDash()");
+    container.style.webkitTransform = "rotateY(180deg)";
 
 }
 
@@ -22,8 +22,8 @@ function goToEmployeeLogin(){
     var backButton = document.getElementById('backToLoginButton');
     var loginButton = document.getElementById('login-submit-button');
     backButton.innerHTML = "I'm Not an Employer!";
-    container.style.webkitTransform = "rotateY(180deg)";
     loginButton.setAttribute("onClick", "goToEmployeeDash()");
+    container.style.webkitTransform = "rotateY(180deg)";
 }
 
 function backToLoginSelection(){
