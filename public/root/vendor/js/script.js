@@ -1,3 +1,6 @@
+jQuery(document).ready(function(){
+    changePageContent("jobPage");
+})
 
 //<editor-fold desc="LOADING: Firebase init code">
 // Initialize Firebase
@@ -78,7 +81,7 @@ function goToStudentDash(){
 }
 //</editor-fold>
 
-
+//<editor-fold desc="FUNCTION: Test button for posting jobs to the DB">
 function testButton(){
 
     if (jQuery("#testingDIV span").text() === ('1')){
@@ -98,12 +101,10 @@ function testButton(){
 
     //Pushes data to the DB
     ref.push(data);
-
-
-
 }
+//</editor-fold>
 
-
+//<editor-fold desc="FUNCTION: Check to see which page we're currently on">
 //This if statement will check to see if the page is the student dashboard; If we are on the student dashboard
 // then run the job fetching code.
 if (document.title == "Student Dashboard"){
@@ -112,7 +113,9 @@ if (document.title == "Student Dashboard"){
 else{
     console.log("We Are Not On The Student Dashboard");
 }
+//</editor-fold>
 
+//<editor-fold desc="FUNCTIONS: Loading job postings dynamically">
 function fetchJobs(){
     //This is getting the data based on weather or not it's a value
     ref.on('value', gotData, errData);
@@ -164,5 +167,83 @@ function errData(err){
     console.log('Error!');
     console.log(err);
 }
+//</editor-fold>
+
+//<editor-fold desc="FUNCTION: Making the navbar stick to top of page when scrolling">
+//When the user scrolls the page, execute myFunction
+window.onload = function() {
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    //All of this code works towards making the navbar stick to the top of the page when the user scrolls.
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+};
+//</editor-fold>
+
+
+function student_showJobs(){
+    //this function hides the show profile section and brings in the job section
+    changePageContent("jobPage");
+
+}
+
+function student_showProfile(){
+    //this function hides the jobs section and shows the profile
+    changePageContent("profilePage");
+
+}
+
+function changePageContent(page){
+    //get required document vars
+    var profileButton = document.getElementById("student_showProfileButton");
+    var jobButton = document.getElementById("student_showJobsButton");
+
+    var jobsContent = document.getElementById("student-jobsContent");
+    var profileContent = document.getElementById("student-profileContent");
+
+
+
+
+
+    if(page=="jobPage"){
+        //Change color of profile button
+        jobButton.style.backgroundColor = "#9ba1bf";
+        profileButton.style.backgroundColor = "#d6d6d6";
+
+        jQuery("#student-jobsContent").fadeOut(500);
+        setTimeout(function () {
+            jQuery("#student-profileContent").fadeIn(500);
+            //this code will delete all of the job postings from the job display div when the profile section is loaded
+            document.getElementById("jobDisplayDiv").innerHTML = "";
+        }, 500);
+
+
+    }
+    else{
+        //Change color of jobs button
+        jobButton.style.backgroundColor = "#d6d6d6";
+        profileButton.style.backgroundColor = "#9ba1bf";
+
+        fetchJobs();
+
+        //this code fades out/then in the required info
+        jQuery("#student-profileContent").fadeOut(500);
+        setTimeout(function () {
+            jQuery("#student-jobsContent").fadeIn(500);
+        }, 500);
+
+    }
+}
+
+
+
 
 

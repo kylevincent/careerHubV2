@@ -27,85 +27,89 @@
     <div class="pageLoadingGif"></div>
 </div>
 
-<!--TODO Navbar -->
-
 <main role="main">
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">Student Name</h1>
+            <h1 class="display-3">Sam Samuelson</h1>
             <p><img src="data:image/gif;base64,R0lGODlhAQABAIABAAJ12AAAACwAAAAAAQABAAACAkQBADs=" width="100" height="100" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail"></p>
             <p>Small blurb describing degree, interests etc.</p>
         </div>
     </div>
 
-    <div class="container">
-        <div id="jobDisplayDiv"> JOB DISPLAY DIV
+    <div id="navbar">
+        <button class="btn btn-outline-success" onclick="student_showJobs()" id="student_showJobsButton">My Profile</button>
+        <button  class="btn btn-outline-info" onclick="student_showProfile()" id="student_showProfileButton">Jobs</button>
+    </div>
 
-            <button onclick="fetchJobs()"> SHOW JOBS </button>
+    <div class="content">
 
+        <div id="student-jobsContent">
+            <div id="jobDisplayDiv"> JOB DISPLAY DIV
+            </div>
         </div>
 
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Bio</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div>
+        <div class="container" id="student-profileContent">
 
-            <div id="testingDIV">
-                <button onclick="testButton()">Push To Test</button>
-                <span>xxx</span>
-            </div>
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Bio</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                </div>
 
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Endorsed Skills</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h2>Experience</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Morbi leo risus</li>
-                    <li class="list-group-item">Porta ac consectetur ac</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-            </div>
-        </div>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-            </div>
-            <div class="custom-file">
-                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Current Integrations</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            </div>
-        </div>
-        <hr>
+                <div id="testingDIV">
+                    <button onclick="testButton()">Push To Test</button>
+                    <span>xxx</span>
+                </div>
 
-    </div> <!-- /container -->
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Endorsed Skills</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Experience</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Current Integrations</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                </div>
+            </div>
+            <hr>
+
+        </div> <!-- /container -->
+    </div>
 
 </main>
 
 <footer class="container">
     <p>&copy; Company 2017-2018</p>
 </footer>
-
-
 
 </body>
 </html>

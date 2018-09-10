@@ -1,10 +1,10 @@
+
+/*<editor-fold desc="STYLING: Page Layout">*/
+
 body{
     background-color: white;
 }
 
-
-
-/*<editor-fold desc="STYLING: Page Layout">*/
 #mainBackgroundDiv{
     height: 100vh;
 }
@@ -146,6 +146,31 @@ body{
 
 /*</editor-fold>*/
 
+/*<editor-fold desc="STYLING: Dynamic Job Postings (student side)">*/
+#jobDisplayDiv{
+    padding-top: 10px;
+}
+
+#jobDisplayDiv-post-container{
+    width : 100%;
+    height: 50px;
+}
+
+#jobDisplayDiv-post-title{
+    width: 30%;
+    height: 100%;
+    display:inline-block;
+    background-color: #67b168;
+}
+
+#jobDisplayDiv-post-desc{
+    display: inline-block;
+    background-color: #6683a4;
+    width: 50%;
+    height: 100%;
+}
+/*</editor-fold>*/
+
 /*<editor-fold desc="FANCY CSS ANIMATION: Loading wheel spinning animation">*/
 .loader {
     border: 6px solid #f3f3f3;
@@ -254,21 +279,58 @@ body{
 
 /*</editor-fold>*/
 
-#jobDisplayDiv-post-container{
-    width : 100%;
-    height: 50px;
+/*<editor-fold desc="FANCY CSS: Styling for navbar and sticky aspect">*/
+#navbar{
+    overflow: hidden;
+    background-color: #5e5e5e;
+    text-align: center;
+    z-index: 9999;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
 }
 
-#jobDisplayDiv-post-title{
-    width: 30%;
-    height: 100%;
-    display:inline-block;
-    background-color: #67b168;
-}
-
-#jobDisplayDiv-post-desc{
+#navbar button{
     display: inline-block;
-    background-color: #6683a4;
-    width: 50%;
-    height: 100%;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 30%;
+    font-size: 20px;
+    color: #2c4b65;
+    border-radius: 15px;
 }
+
+#navbar button:focus{
+    outline: 0;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content{
+    pading-top: 60px;
+}
+/*</editor-fold>*/
+
+#student-jobsContent{
+    display: none;
+
+}
+
+#student-profileContent{
+    display: none;
+
+}
+
+.content{
+    height: 1000px;
+}
+
+
