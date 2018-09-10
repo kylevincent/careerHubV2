@@ -61,14 +61,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1270" />
-          <entry key="html" value="579" />
+          <entry key="html" value="805" />
           <entry key="js" value="4175" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1270" />
-          <entry key="HTML" value="579" />
+          <entry key="HTML" value="805" />
           <entry key="JavaScript" value="4175" />
         </counts>
       </usages-collector>
@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/root/loginPage/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="64" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -98,11 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/root/studentDash/studentDashIndex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="33" column="95" lean-forward="true" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
-              <folding>
-                <element signature="n#src#0;n#img#0;n#p#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="34" column="131" selection-start-line="34" selection-start-column="131" selection-end-line="34" selection-end-column="131" />
             </state>
           </provider>
         </entry>
@@ -163,8 +160,8 @@
         <option value="$PROJECT_DIR$/public/root/vendor/js/initDB.js" />
         <option value="$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html" />
         <option value="$PROJECT_DIR$/public/root/vendor/css/style.css" />
-        <option value="$PROJECT_DIR$/public/root/studentDash/studentDashIndex.html" />
         <option value="$PROJECT_DIR$/public/root/vendor/js/script.js" />
+        <option value="$PROJECT_DIR$/public/root/studentDash/studentDashIndex.html" />
       </list>
     </option>
   </component>
@@ -288,12 +285,12 @@
       <workItem from="1536538945641" duration="4717000" />
       <workItem from="1536544556333" duration="207000" />
       <workItem from="1536544934810" duration="4024000" />
-      <workItem from="1536556348508" duration="9060000" />
+      <workItem from="1536556348508" duration="9957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26812000" />
+    <option name="totallyTimeSpent" value="27709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
@@ -356,13 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/root/loginPage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/root/vendor/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -396,13 +386,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/root/loginPage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/root/studentDash/studentDashIndex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="33" column="95" lean-forward="true" selection-start-line="33" selection-start-column="95" selection-end-line="33" selection-end-column="95" />
-          <folding>
-            <element signature="n#src#0;n#img#0;n#p#0;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="34" column="131" selection-start-line="34" selection-start-column="131" selection-end-line="34" selection-end-column="131" />
         </state>
       </provider>
     </entry>
