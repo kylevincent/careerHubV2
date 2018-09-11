@@ -153,21 +153,51 @@ body{
 
 #jobDisplayDiv-post-container{
     width : 100%;
-    height: 50px;
+    height: 60px;
+    margin-bottom: 10px;
 }
 
 #jobDisplayDiv-post-title{
-    width: 30%;
+    width: 15%;
+    text-align: left;
     height: 100%;
     display:inline-block;
     background-color: #67b168;
+    padding :5px;
+    vertical-align: top;
 }
 
 #jobDisplayDiv-post-desc{
+    padding :5px;
+    text-align: left;
     display: inline-block;
-    background-color: #6683a4;
-    width: 50%;
+    background-color: rgba(102, 131, 164, 0.49);
+    width: 40%;
     height: 100%;
+    vertical-align: top;
+}
+
+#jobDisplayDiv-post-email{
+    padding :5px;
+    text-align: left;
+    display: inline-block;
+    background-color: rgba(109, 164, 153, 0.43);
+    width: 20%;
+    height: 100%;
+    vertical-align: top;
+}
+
+#student-jobsContent{
+    display: none;
+    text-align: center;
+}
+
+#student-profileContent{
+    display: none;
+}
+
+.content{
+    height: 1000px;
 }
 /*</editor-fold>*/
 
@@ -319,18 +349,6 @@ body{
 }
 /*</editor-fold>*/
 
-#student-jobsContent{
-    display: none;
 
-}
-
-#student-profileContent{
-    display: none;
-
-}
-
-.content{
-    height: 1000px;
-}
 
 

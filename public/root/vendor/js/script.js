@@ -1,6 +1,4 @@
-jQuery(document).ready(function(){
-    changePageContent("jobPage");
-})
+
 
 //<editor-fold desc="LOADING: Firebase init code">
 // Initialize Firebase
@@ -81,23 +79,24 @@ function goToStudentDash(){
 }
 //</editor-fold>
 
-//<editor-fold desc="FUNCTION: Test button for posting jobs to the DB">
-function testButton(){
+//<editor-fold desc="FUNCTION: Button for posting data to the database">
+function submitTo_DB(){
 
-    if (jQuery("#testingDIV span").text() === ('1')){
-        jQuery('#testingDIV span').text("0");
+    //Getting input values from page
+    var jobTitle = document.getElementById("jobTitleInput").value;
+    var jobDescription = document.getElementById("jobDescriptionInput").value;
+    var jobPay = document.getElementById("jobPayInput").value;
+    var jobEmail = document.getElementById("jobEmailInput").value;
 
-    }
-    else{
-        jQuery('#testingDIV span').text("1");
-    }
-
+    console.log(jobTitle, jobDescription, jobPay, jobEmail);
 
     //Creating data
     var data= {
-        title: "beer bois",
-        description: "We find the beer, we look at it for 3 seconds, then we drink"
-    }
+        title: jobTitle,
+        description: jobDescription,
+        jobPay: jobPay,
+        email: jobEmail
+    };
 
     //Pushes data to the DB
     ref.push(data);
@@ -107,12 +106,17 @@ function testButton(){
 //<editor-fold desc="FUNCTION: Check to see which page we're currently on">
 //This if statement will check to see if the page is the student dashboard; If we are on the student dashboard
 // then run the job fetching code.
-if (document.title == "Student Dashboard"){
-    console.log("We Are On The Student Dashboard");
+function checkPage(){
+    if (document.title == "Student Dashboard"){
+        console.log("We Are On The Student Dashboard");
+        return true;
+    }
+    else{
+        console.log("We Are Not On The Student Dashboard");
+        return false;
+    }
 }
-else{
-    console.log("We Are Not On The Student Dashboard");
-}
+
 //</editor-fold>
 
 //<editor-fold desc="FUNCTIONS: Loading job postings dynamically">
@@ -123,35 +127,55 @@ function fetchJobs(){
 
 //logging the data that's got from the firebase ref.on call into the console
 function gotData(data){
+    //getting 'jobs' db branch from firebase database
     var jobs = data.val();
     var keys = Object.keys(jobs);
     console.log(keys);
 
+    //This clears the jobposting div of any elements if any were in there before we run the rest of the code and add more elements in
+    document.getElementById("jobDisplayDiv").innerHTML = "";
+
     //running through a for loop based on the ammount of items in the db
     for (var i = 0; i < keys.length; i++){
+        //calling in values from the database
         var k = keys[i];
         var titl = jobs[k].title;
         var desc = jobs[k].description;
-        console.log(titl, desc);
+        var email = jobs[k].email;
+        var jpay = jobs[k].jobPay;
+        console.log(titl, desc, jpay, email);
 
         //create an element on the page for each job in the db
         var main_container = document.createElement("div");
         var left_container = document.createElement("div");
+        var leftP1 = document.createElement("p");
+        var leftP2 = document.createElement("p");
+        var middle_container = document.createElement("div");
         var right_container = document.createElement("div");
-        var leftText = document.createTextNode(titl);
-        var rightText = document.createTextNode(desc);
+
+        //Assigning values from the database into text notes
+        var leftText1 = document.createTextNode(titl);
+        var leftText2 = document.createTextNode(jpay);
+        var middleText = document.createTextNode(desc);
+        var rightText = document.createTextNode(email);
+
+        //adding the text to left, middle, and right divs
+        left_container.appendChild(leftP1);
+        left_container.appendChild(leftP2);
+        middle_container.appendChild(middleText);
+        right_container.appendChild(rightText);
+        leftP1.appendChild(leftText1);
+        leftP2.appendChild(leftText2);
 
         //adding ID's to each element
         left_container.setAttribute("id", "jobDisplayDiv-post-title");
-        right_container.setAttribute("id", "jobDisplayDiv-post-desc");
+        middle_container.setAttribute("id", "jobDisplayDiv-post-desc");
+        right_container.setAttribute("id", "jobDisplayDiv-post-email");
         main_container.setAttribute("id", "jobDisplayDiv-post-container");
-
-        //adding text to left/right divs
-        left_container.appendChild(leftText);
-        right_container.appendChild(rightText);
 
         //adding containers to main div
         main_container.appendChild(left_container);
+        main_container.appendChild(middle_container);
         main_container.appendChild(right_container);
 
         //fetching the main div on the doc and adding the maincontainer to it
@@ -172,23 +196,27 @@ function errData(err){
 //<editor-fold desc="FUNCTION: Making the navbar stick to top of page when scrolling">
 //When the user scrolls the page, execute myFunction
 window.onload = function() {
-    window.onscroll = function() {myFunction()};
 
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+    //Checking to see if we are on the student dashboard (because the employee dash doesn't have this code yet)
+    if(checkPage()){
+        window.onscroll = function() {myFunction()};
 
-    //All of this code works towards making the navbar stick to the top of the page when the user scrolls.
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        //All of this code works towards making the navbar stick to the top of the page when the user scrolls.
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
     }
 };
 //</editor-fold>
 
-
+//<editor-fold desc="FUNCTIONS: Swapping between pages">
 function student_showJobs(){
     //this function hides the show profile section and brings in the job section
     changePageContent("jobPage");
@@ -208,10 +236,6 @@ function changePageContent(page){
 
     var jobsContent = document.getElementById("student-jobsContent");
     var profileContent = document.getElementById("student-profileContent");
-
-
-
-
 
     if(page=="jobPage"){
         //Change color of profile button
@@ -242,6 +266,15 @@ function changePageContent(page){
 
     }
 }
+
+jQuery(document).ready(function(){
+    //Check to see if we are on the student dashboard, if we hare then change the page content to the profile screen
+    if(checkPage()){
+        changePageContent("jobPage");
+    }
+
+});
+//</editor-fold>
 
 
 
