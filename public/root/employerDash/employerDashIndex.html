@@ -3,37 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Employer Dashboard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--IMPORTING BOOTSTRAP/FOREIGN FILES-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!--LOADING IN FIREBASE LIBRARY-->
     <script src="../vendor/js/firebase.js"></script>
 
     <!-- LOCAL JAVASCRIPT AND CSS FILES-->
     <link href="../vendor/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/css/employer_dashboard.css" rel="stylesheet" type="text/css">
     <script src="../vendor/js/script.js"></script>
 </head>
 <body>
 <!--These two divs are purely for aesthetic page loading-->
-<div id="pageLoadingContainer">
-    <div class="pageLoadingGif"></div>
+<!-- Removed the pageloader until when the page is finished-->
+
+
+
+<div id="employer_top_section">
+
+
+    <div class="row justify-content-left">
+        <div class="col-md-auto">
+            <img id="employer_logo" src="../vendor/res/images/testlogo.png">
+        </div>
+
+        <div class="col-md-auto">
+            <h1 id="employer_name">World Wildlife Fund</h1>
+        </div>
+
+        </div>
+
+    <p id="employer_description">WWF is one of Australia’s most trusted
+        conservation organisations. At WWF, we work in Australia and in
+        our Asia-Pacific backyard to protect endangered species and habitats,
+        meet the challenge of climate change, and build a world where people
+        live in harmony with nature.</p>
+    <hr>
+
+    <div class="row justify-content-md-left">
+        <div class="col-md-auto text-center">
+            <h5>Current Job Posts</h5>
+            <h2>4</h2>
+        </div>
+        <div class="col-md-auto text-center">
+            <h5>Total Job Posts</h5>
+            <h2>10</h2>
+        </div>
+        <div class="col-md-auto text-center">
+            <h5>Total Job Applications</h5>
+            <h2>2,452</h2>
+        </div>
+        <div class="col-md-auto text-center">
+            <h5>Total Jobs Offered</h5>
+            <h2>18</h2>
+        </div>
+
+
+    </div>
+
 </div>
 
-<h1 id="employee_name">Employer Name</h1>
-<img id="employee_logo" src="../vendor/res/images/testlogo.png">
-<p id="employee_description">This is a description</p>
+<hr>
+<div id="employer_main_section">
+
+
+    <div class="card">
+        <div class="card-body">
+
+            <h3>Job Title</h3>
+
+        </div>
+    </div>
 
 
 
 
 
 
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

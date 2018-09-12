@@ -1,0 +1,33 @@
+#employer_top_section{
+    width: 85%;
+    margin: auto;
+}
+
+
+#employer_main_section{
+    width: 85%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+#employer_description{
+    width: 50%;
+}
+
+#employer_logo{
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+#employer_name{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+
+}
+
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
