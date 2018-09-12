@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html" line="39" />
+    <bookmark url="file://$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html" line="37" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f6a4df-eef9-4325-ba10-a31aa8600146" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +102,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
-          <entry key="html" value="3" />
+          <entry key="html" value="4" />
           <entry key="js" value="1" />
           <entry key="png" value="2" />
         </counts>
@@ -111,23 +110,23 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="3" />
+          <entry key="HTML" value="4" />
           <entry key="Image" value="2" />
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="267" />
-          <entry key="html" value="996" />
-          <entry key="txt" value="112" />
+          <entry key="css" value="354" />
+          <entry key="html" value="1076" />
+          <entry key="txt" value="159" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="267" />
-          <entry key="HTML" value="996" />
-          <entry key="PLAIN_TEXT" value="112" />
+          <entry key="CSS" value="354" />
+          <entry key="HTML" value="1076" />
+          <entry key="PLAIN_TEXT" value="159" />
         </counts>
       </usages-collector>
     </session>
@@ -136,29 +135,27 @@
     <splitter split-orientation="vertical" split-proportion="0.71428573">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="473">
-                  <caret line="102" column="181" selection-start-line="102" selection-start-column="181" selection-end-line="102" selection-end-column="181" />
+                <state relative-caret-position="564">
+                  <caret line="184" column="6" selection-start-line="184" selection-start-column="6" selection-end-line="184" selection-end-column="6" />
+                  <folding>
+                    <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/root/vendor/js/script.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1440">
-                  <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -169,7 +166,9 @@
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-388" />
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -198,8 +197,8 @@
         <option value="$PROJECT_DIR$/public/root/vendor/js/script.js" />
         <option value="$PROJECT_DIR$/public/root/employerDash/REMOVED FORM.html" />
         <option value="$PROJECT_DIR$/public/root/vendor/css/employee_dashboard.css" />
-        <option value="$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css" />
         <option value="$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html" />
+        <option value="$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css" />
       </list>
     </option>
   </component>
@@ -326,7 +325,7 @@
       <workItem from="1536544934810" duration="4024000" />
       <workItem from="1536556348508" duration="13322000" />
       <workItem from="1536619250662" duration="6051000" />
-      <workItem from="1536744888058" duration="7380000" />
+      <workItem from="1536744888058" duration="8598000" />
     </task>
     <task id="LOCAL-00001" summary="removed the form code and moved it to another file">
       <created>1536745469681</created>
@@ -349,11 +348,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536750870719</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="created card template">
+      <created>1536752318712</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536752318712</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added static test cards">
+      <created>1536753010226</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536753010226</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44505000" />
+    <option name="totallyTimeSpent" value="45723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="900" height="1442" extended-state="6" />
@@ -392,7 +405,9 @@
     <MESSAGE value="removed the form code and moved it to another file" />
     <MESSAGE value="basic profile header" />
     <MESSAGE value="basic top part of page" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic top part of page" />
+    <MESSAGE value="created card template" />
+    <MESSAGE value="added static test cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="added static test cards" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css" />
@@ -466,17 +481,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css">
+    <entry file="file://$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        <state relative-caret-position="564">
+          <caret line="184" column="6" selection-start-line="184" selection-start-column="6" selection-end-line="184" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html">
+    <entry file="file://$PROJECT_DIR$/public/root/vendor/css/employer_dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="102" column="181" selection-start-line="102" selection-start-column="181" selection-end-line="102" selection-end-column="181" />
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
