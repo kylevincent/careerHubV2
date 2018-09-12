@@ -40,3 +40,9 @@
 .job_card_settings_buttons{
     margin-top: 20px;
 }
+
+#post_job_button{
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
