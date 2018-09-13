@@ -10,3 +10,8 @@
 #job_description_title{
     width: 48.5%;
 }
+
+#job_create_button{
+    margin-left: 10px;
+    margin-right: 10px;
+}

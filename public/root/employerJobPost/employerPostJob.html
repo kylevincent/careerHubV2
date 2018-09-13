@@ -15,7 +15,43 @@
 </head>
 <body>
 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Job Hub</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../employerDash/employerDashIndex.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../employerDash/employerBio.html">Company Bio</a>
+            </li>
+        </ul>
+        <a id="job_create_button" href="../employerJobPost/employerPostJob.html"><button type="button" class="btn btn-primary">Create Job Post</button></a>
+
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button">Edit profile</button>
+                <button class="dropdown-item" type="button">Settings</button>
+                <a href="../loginPage/index.html"><button class="dropdown-item" type="button">Logout</button></a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
 <div class="container">
+
+
 
 <h1>Post Job</h1>
 
@@ -104,9 +140,12 @@
 </form>
 
     <a href="../employerDash/employerDashIndex.html"><button class="btn btn-primary">Submit</button></a>
+    <a href="../employerDash/employerDashIndex.html"><button class="btn btn-danger">Cancel</button></a>
+
 
 
 </div>
+<br>
 
 
 

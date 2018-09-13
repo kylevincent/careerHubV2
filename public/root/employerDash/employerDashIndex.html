@@ -38,8 +38,19 @@
                 <a class="nav-link" href="employerBio.html">Company Bio</a>
             </li>
         </ul>
-        <a class="nav-link" href="../loginPage/index.html">Logout</a>
-        <a href="../employerJobPost/employerPostJob.html"><button type="button" class="btn btn-primary">Create Job Post</button></a>
+        <a id="job_create_button" href="../employerJobPost/employerPostJob.html"><button type="button" class="btn btn-primary">Create Job Post</button></a>
+
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Profile
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button">Edit profile</button>
+                <button class="dropdown-item" type="button">Settings</button>
+                <a href="../loginPage/index.html"><button class="dropdown-item" type="button">Logout</button></a>
+            </div>
+        </div>
 
     </div>
 </nav>
