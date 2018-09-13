@@ -7,24 +7,12 @@
 #employer_main_section{
     width: 85%;
     margin: auto;
-    padding-top: 20px;
 }
 
-#employer_description{
-    width: 50%;
-}
 
-#employer_logo{
-    max-width: 150px;
-    max-height: 150px;
-
-}
-
-#employer_name{
-    width: 500px;
-    position: absolute;
-    top: 50%;
-
+#account_title_header {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .card{
@@ -32,10 +20,6 @@
     margin-bottom: 30px;
 }
 
-.job_card_items{
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
 
 .job_card_settings_buttons{
     margin-top: 20px;
