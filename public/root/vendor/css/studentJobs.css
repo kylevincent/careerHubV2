@@ -1,0 +1,66 @@
+
+
+#jobDisplayDiv {
+    padding-top: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#jobDisplayDiv-post-container{
+    width : 70%;
+    height: 20%;
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 5px 5px gray;
+    border: lightgray solid 1px;
+    border-radius: 4px;
+}
+#jobDisplayDiv-post-title{
+    width: 80%;
+    margin: 5px 20px 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px 5px;
+    border-bottom: black solid 2px;
+}
+
+#jobDisplayDiv-post-title p{
+    alignment: left;
+    text-align: left;
+    float: left;
+    font-weight: Bold;
+    font-size: 20px;
+
+}
+
+#jobDisplayDiv-post-desc{
+    width: 80%;
+    padding: 10px 5px;
+    height: 100%;
+    margin: 5px 20px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#jobDisplayDiv-post-email {
+    width: 40%;
+    margin: 20px auto 10px;
+    padding: 10px 5px;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+
+
+}
+
+#student-jobsContent {
+    display: none;
+    text-align: center;
+    width: 100%;
+    height: 1000px;
+    background-image: url("/public/root/vendor/res/images/officePhoto2.jpeg");
+
+}

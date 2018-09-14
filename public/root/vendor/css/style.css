@@ -147,6 +147,7 @@ body{
 /*</editor-fold>*/
 
 /*<editor-fold desc="STYLING: Dynamic Job Postings (student side)">*/
+/*
 #jobDisplayDiv{
     padding-top: 10px;
 }
@@ -191,7 +192,7 @@ body{
     display: none;
     text-align: center;
 }
-
+*/
 #student-profileContent{
     display: none;
 }
