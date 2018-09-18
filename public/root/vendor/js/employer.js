@@ -13,22 +13,17 @@ var jobPosts = JSON.parse(rawJobPosts);
 
 
 window.onload = function start() {
-
     populateJobListings();
     populateInfoHeader();
 };
 
 
 function populateInfoHeader() {
-
-
-
     document.getElementById("account_title_header").innerHTML = userAccount.companyName;
     document.getElementById("currentJobPostsLabel").innerHTML = jobPosts.jobPosts.length;
     document.getElementById("totalJobPostslabel").innerHTML = jobPosts.jobPosts.length + 12;
     document.getElementById("totalJobAppsLabel").innerHTML = Math.floor(Math.random() * 4000)+2000;
     document.getElementById("totalJobsOfferedLabel").innerHTML = Math.floor(Math.random() * 50)+10;
-
 }
 
 
