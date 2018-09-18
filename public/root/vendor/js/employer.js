@@ -14,34 +14,42 @@ var jobPosts = JSON.parse(rawJobPosts);
 
 window.onload = function start() {
 
-    poulateJobListings();
+    populateJobListings();
     
 };
 
 
 
-function poulateJobListings() {
+function populateJobListings() {
 
-    var jobId = "12321";
-    var jobTitle = "Test Job";
-    var numApps = "3242";
-    var daysLeft = "12";
-    var editLink = "edit";
+    for (i = 0; i < jobPosts.jobPosts.length; i++){
+        var jobId = jobPosts.jobPosts[i].jobId;
+        var jobTitle = jobPosts.jobPosts[i].jobTitle;
+        var numApps = "3242";
+        var daysLeft = jobPosts.jobPosts[i].datePosted;
+        var editLink = "edit";
 
-    var setString = "<tr><td>" +
-        jobId +
-        "</td><td>" +
-        jobTitle +
-        "</td><td>" +
-        numApps +
-        "</td><td>" +
-        daysLeft +
-        "</td><td>" +
-        editLink +
-        "</td></tr>";
+        var setString = "<tr><td>" +
+            jobId +
+            "</td><td>" +
+            jobTitle +
+            "</td><td>" +
+            numApps +
+            "</td><td>" +
+            daysLeft +
+            "</td><td>" +
+            editLink +
+            "</td></tr>";
+
+        document.getElementById("jobListings").innerHTML += setString;
+    }
 
 
-    document.getElementById("jobListings").innerHTML = setString;
+
+
+
+
+
 
 
     
