@@ -7,14 +7,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
     <link rel="stylesheet" href="../vendor/css/employerPostJob.css">
-
 
     <title>JobHub</title>
 </head>
 <body>
-
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Job Hub</a>
@@ -48,17 +45,11 @@
     </div>
 </nav>
 
-
 <div class="container">
-
-
 
 <h1>Post Job</h1>
 
-
-
 <form>
-
 
     <div class="form-group">
         <label for="job_class">Job Classification</label>
@@ -74,7 +65,6 @@
 
     <div class="row">
         <div class="col">
-
             <div class="form-group">
                 <label for="job_title">Job Title</label>
                 <input type="text" class="form-control" id="job_title">
@@ -82,20 +72,15 @@
 
         </div>
         <div class="col">
-
             <div class="form-group">
                 <label for="job_location">Location</label>
                 <input type="text" class="form-control" id="job_location">
             </div>
-
         </div>
     </div>
 
-
-
     <div class="row">
         <div class="col">
-
             <div class="form-group">
                 <label for="job_type">Job Type</label>
                 <select id="job_type" class="form-control">
@@ -105,22 +90,14 @@
                     <option>Casual</option>
                 </select>
             </div>
-
         </div>
         <div class="col">
-
-
             <div class="form-group">
                 <label for="job_salary">Salary</label>
                 <input type="text" class="form-control" id="job_salary">
             </div>
-
-
         </div>
     </div>
-
-
-
 
 <hr class="section_break">
 
@@ -135,19 +112,68 @@
     </div>
 
 
-
-
 </form>
 
     <a href="../employerDash/employerDashIndex.html"><button class="btn btn-primary">Submit</button></a>
+    <button id="slackButton" onclick="sendToSlack()" class="btn btn-primary">Send to Slack</button>
+
     <a href="../employerDash/employerDashIndex.html"><button class="btn btn-danger">Cancel</button></a>
-
-
 
 </div>
 <br>
 
+<script>
+  window.onload = function() {
+      document.getElementById("slackButton").onclick = function sendToSlack() {
+        {
+            const xhr = new XMLHttpRequest();
+            var author_name = "WWF";
+            var title = document.getElementById("job_title").value;
+            var title_link = "https://api.slack.com/";
+            var text = document.getElementById("job_description").value;
+            var job_type = document.getElementById("job_type").value;
+            var job_salary = document.getElementById("job_salary").value;
+            var job_location = document.getElementById("job_location").value;
+            var unix_ts = Math.round(+new Date()/1000);
 
+
+            xhr.open("POST", "https://hooks.slack.com/services/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", true);
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            // xhr.send(JSON.stringify({"text":"Hello, is it me you're looking for"}))
+
+            xhr.send(JSON.stringify({"attachments": [
+              {
+                  "fallback": "A job listing by CareerHubv2",
+                  "color": "#2eb886",
+                  "pretext": "An exciting new job opportunity has opened up:",
+                  "author_name": author_name,
+                  "title": title + ", " + job_location,
+                  "title_link": title_link,
+                  "text": text,
+                  "fields": [
+                      {
+                          "title": "Job type",
+                          "value": job_type,
+                          "short": true
+                      },
+                      {
+                        "title": "Salary",
+                        "value": job_salary,
+                        "short": true
+                      }
+                  ],
+                  "footer": "CareerHubv2",
+                  "footer_icon": "https://platform.slack-edge.com/img/default_application_icon.png",
+                  "ts": unix_ts
+              }
+            ]
+          }))
+        }
+        document.getElementById("slackButton").innerHTML = " Sent to Slack ";
+        document.getElementById("slackButton").setAttribute("disabled", "true");
+      }
+  }
+</script>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
