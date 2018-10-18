@@ -51,15 +51,6 @@ function populateJobListings() {
         document.getElementById("jobListings").innerHTML += setString;
     }
 
-
-
-
-
-
-
-
-
-    
 }
 
 

@@ -96,6 +96,7 @@ function submitTo_DB(){
         description: jobDescription,
         jobPay: jobPay,
         email: jobEmail
+
     };
 
     //Pushes data to the DB

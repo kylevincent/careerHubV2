@@ -313,7 +313,7 @@ body{
 /*<editor-fold desc="FANCY CSS: Styling for navbar and sticky aspect">*/
 #navbar{
     overflow: hidden;
-    background-color: #5e5e5e;
+    background-color: white;
     text-align: center;
     z-index: 9999;
     padding-bottom: 10px;
@@ -330,7 +330,7 @@ body{
     margin-left: 10px;
     width: 30%;
     font-size: 20px;
-    color: #2c4b65;
+    color: white;
     border-radius: 15px;
 }
 
@@ -348,6 +348,11 @@ body{
 .sticky + .content{
     pading-top: 60px;
 }
+
+.jumbotron{
+    background-color: #313530;
+}
+
 /*</editor-fold>*/
 
 
