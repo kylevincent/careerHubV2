@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="00f6a4df-eef9-4325-ba10-a31aa8600146" name="Default Changelist" comment="header populated with javascript" />
+=======
+    <list default="true" id="00f6a4df-eef9-4325-ba10-a31aa8600146" name="Default Changelist" comment="header populated with javascript">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/root/vendor/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/root/vendor/css/style.css" afterDir="false" />
+    </list>
+>>>>>>> c1c5c34829d67d0406650e29c95b43aea0c25e3d
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +154,64 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/root/loginPage/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="studentDashIndex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/root/studentDash/studentDashIndex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="52" lean-forward="true" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="employerDashIndex.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1139">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
+              <folding>
+                <element signature="n#style#0;n#i#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#1;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="studentJobs.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/root/vendor/css/studentJobs.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1835">
+              <caret line="167" selection-start-line="167" selection-end-line="167" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/root/vendor/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+>>>>>>> c1c5c34829d67d0406650e29c95b43aea0c25e3d
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -174,6 +238,7 @@
       <find>display-3</find>
       <find>populateJobListings</find>
       <find>displa</find>
+      <find>jum</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,10 +256,10 @@
         <option value="$PROJECT_DIR$/public/root/vendor/js/script.js" />
         <option value="$PROJECT_DIR$/public/root/studentDash/studentDashIndexV2.html" />
         <option value="$PROJECT_DIR$/public/root/vendor/js/employer.js" />
-        <option value="$PROJECT_DIR$/public/root/vendor/css/style.css" />
         <option value="$PROJECT_DIR$/public/root/vendor/css/studentJobs.css" />
         <option value="$PROJECT_DIR$/public/root/employerDash/employerDashIndex.html" />
         <option value="$PROJECT_DIR$/public/root/studentDash/studentDashIndex.html" />
+        <option value="$PROJECT_DIR$/public/root/vendor/css/style.css" />
       </list>
     </option>
   </component>
@@ -207,11 +272,19 @@
   <component name="PhpServers">
     <servers />
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+>>>>>>> c1c5c34829d67d0406650e29c95b43aea0c25e3d
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -242,7 +315,7 @@
               <item name="careerHubV2" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="root" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="employerDash" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="careerHubV2" type="b2602c69:ProjectViewProjectNode" />
@@ -250,6 +323,7 @@
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="root" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="careerHubV2" type="b2602c69:ProjectViewProjectNode" />
@@ -346,8 +420,12 @@
       <workItem from="1537844951515" duration="77000" />
       <workItem from="1537845123831" duration="1023000" />
       <workItem from="1538535318149" duration="2903000" />
+<<<<<<< HEAD
       <workItem from="1539857714062" duration="5676000" />
       <workItem from="1539991998290" duration="534000" />
+=======
+      <workItem from="1539857714062" duration="5982000" />
+>>>>>>> c1c5c34829d67d0406650e29c95b43aea0c25e3d
     </task>
     <task id="LOCAL-00001" summary="started moving populating tables over to javascript">
       <created>1537245661751</created>
@@ -374,12 +452,31 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="59082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1386" height="788" extended-state="1" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18476622" />
+=======
+    <option name="totallyTimeSpent" value="58854000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.01487779" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22786458" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.11172414" />
+>>>>>>> c1c5c34829d67d0406650e29c95b43aea0c25e3d
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -449,13 +546,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/root/studentDash/studentDashIndexV2.html" />
-    <entry file="file://$PROJECT_DIR$/public/root/loginPage/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="51" column="75" lean-forward="true" selection-start-line="51" selection-start-column="75" selection-end-line="51" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -508,10 +598,28 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/public/root/vendor/css/style.css">
+=======
+    <entry file="file://$PROJECT_DIR$/public/root/loginPage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="65" column="43" selection-start-line="65" selection-start-column="43" selection-end-line="65" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/root/studentDash/studentDashIndex.html">
+>>>>>>> c1c5c34829d67d0406650e29c95b43aea0c25e3d
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5525">
           <caret line="325" column="23" selection-start-line="325" selection-start-column="23" selection-end-line="325" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/root/vendor/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="339" lean-forward="true" selection-start-line="339" selection-end-line="339" />
         </state>
       </provider>
     </entry>
