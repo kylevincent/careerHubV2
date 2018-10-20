@@ -218,13 +218,13 @@ window.onload = function() {
 //</editor-fold>
 
 //<editor-fold desc="FUNCTIONS: Swapping between pages">
-function student_showJobs(){
+function student_showProfile(){
     //this function hides the show profile section and brings in the job section
     changePageContent("jobPage");
 
 }
 
-function student_showProfile(){
+function student_displayJobs(){
     //this function hides the jobs section and shows the profile
     changePageContent("profilePage");
 
@@ -232,8 +232,8 @@ function student_showProfile(){
 
 function changePageContent(page){
     //get required document vars
-    var profileButton = document.getElementById("student_showProfileButton");
-    var jobButton = document.getElementById("student_showJobsButton");
+    var profileButton = document.getElementById("student_showJobButton");
+    var jobButton = document.getElementById("student_showProfileButton");
 
     var jobsContent = document.getElementById("student-jobsContent");
     var profileContent = document.getElementById("student-profileContent");
