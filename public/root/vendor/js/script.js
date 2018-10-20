@@ -153,12 +153,14 @@ function gotData(data){
         var leftP2 = document.createElement("p");
         var middle_container = document.createElement("div");
         var right_container = document.createElement("div");
+        var resumeBtn = document.createElement("BUTTON")
 
         //Assigning values from the database into text notes
         var leftText1 = document.createTextNode(titl);
         var leftText2 = document.createTextNode(jpay);
         var middleText = document.createTextNode(desc);
         var rightText = document.createTextNode(email);
+        var resumeText = document.createTextNode("Apply");
 
         //adding the text to left, middle, and right divs
         left_container.appendChild(leftP1);
@@ -167,17 +169,21 @@ function gotData(data){
         right_container.appendChild(rightText);
         leftP1.appendChild(leftText1);
         leftP2.appendChild(leftText2);
+        resumeBtn.appendChild(resumeText);
 
         //adding ID's to each element
         left_container.setAttribute("id", "jobDisplayDiv-post-title");
         middle_container.setAttribute("id", "jobDisplayDiv-post-desc");
         right_container.setAttribute("id", "jobDisplayDiv-post-email");
         main_container.setAttribute("id", "jobDisplayDiv-post-container");
+        resumeBtn.setAttribute("id", "applyBtn");
+        resumeBtn.setAttribute("Class", "btn btn-outline-primary");
 
         //adding containers to main div
         main_container.appendChild(left_container);
         main_container.appendChild(middle_container);
         main_container.appendChild(right_container);
+        main_container.appendChild(resumeBtn);
 
         //fetching the main div on the doc and adding the maincontainer to it
         var mainJobDiv = document.getElementById("jobDisplayDiv");
