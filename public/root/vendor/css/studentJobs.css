@@ -115,6 +115,24 @@ body {
     border-bottom: black solid 2px;
 }
 
+#jobDisplayDiv-post-header{
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+#applyBtn{
+    position: relative;
+    float: right;
+    top: 40px;
+    width: 10%;
+
+}
+
 #jobDisplayDiv-post-title p{
     alignment: left;
     text-align: left;
@@ -135,13 +153,14 @@ body {
 }
 
 #jobDisplayDiv-post-email {
-    width: 40%;
+    width: 70%;
     margin: 20px auto 10px;
     padding: 10px 5px;
-    text-align: center;
+    text-align: left;
     display: inline-block;
     height: 100%;
     vertical-align: top;
+    font-style: oblique;
 
 
 }

@@ -144,20 +144,30 @@ function gotData(data){
         var desc = jobs[k].description;
         var email = jobs[k].email;
         var jpay = jobs[k].jobPay;
+        // var location = jobs[k].jobLocation;
+        // var jtype = jobs[k].jobType;
+        // var jclass = jobs[k].jobClass;
+
         console.log(titl, desc, jpay, email);
 
         //create an element on the page for each job in the db
         var main_container = document.createElement("div");
+        var top_container = document.createElement("div");
         var left_container = document.createElement("div");
         var leftP1 = document.createElement("p");
         var leftP2 = document.createElement("p");
         var middle_container = document.createElement("div");
         var right_container = document.createElement("div");
-        var resumeBtn = document.createElement("BUTTON")
+        var resumeBtn = document.createElement("BUTTON");
+        var leftP3 = document.createElement("p");
+        var leftP4 = document.createElement("p");
 
         //Assigning values from the database into text notes
-        var leftText1 = document.createTextNode(titl);
-        var leftText2 = document.createTextNode(jpay);
+        var leftText1 = document.createTextNode(titl+":");
+        var leftText2 = document.createTextNode(jpay+":");
+        // var leftText3 = document.createTextNode(location+":");
+        // var leftText4 = document.createTextNode(jtype);
+        // var topText = document.createTextNode(jclass);
         var middleText = document.createTextNode(desc);
         var rightText = document.createTextNode(email);
         var resumeText = document.createTextNode("Apply");
@@ -170,6 +180,11 @@ function gotData(data){
         leftP1.appendChild(leftText1);
         leftP2.appendChild(leftText2);
         resumeBtn.appendChild(resumeText);
+        top_container.appendChild(document.createTextNode("wowww ayylmao, job classification"));
+        leftP3.appendChild(document.createTextNode("location"));
+        leftP4.appendChild(document.createTextNode(":job type"));
+        left_container.appendChild(leftP3);
+        left_container.appendChild(leftP4);
 
         //adding ID's to each element
         left_container.setAttribute("id", "jobDisplayDiv-post-title");
@@ -178,17 +193,19 @@ function gotData(data){
         main_container.setAttribute("id", "jobDisplayDiv-post-container");
         resumeBtn.setAttribute("id", "applyBtn");
         resumeBtn.setAttribute("Class", "btn btn-outline-primary");
+        top_container.setAttribute("id", "jobDisplayDiv-post-header");
 
         //adding containers to main div
+        main_container.appendChild(top_container);
         main_container.appendChild(left_container);
         main_container.appendChild(middle_container);
         main_container.appendChild(right_container);
         main_container.appendChild(resumeBtn);
 
+
         //fetching the main div on the doc and adding the maincontainer to it
         var mainJobDiv = document.getElementById("jobDisplayDiv");
         mainJobDiv.appendChild(main_container);
-
 
     }
 }
