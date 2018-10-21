@@ -19,7 +19,7 @@ var ref = database.ref('jobs');
 //<editor-fold desc="FUNCTION: For loading/fading the screen loading gif">
 jQuery(window).on('load',function() {
     // Animate loader off screen
-    $("#pageLoadingContainer").fadeOut("slow");;
+    $("#pageLoadingContainer").fadeOut("slow");
 });
 //</editor-fold>
 
@@ -28,7 +28,7 @@ function goToStudentLogin(){
     //This function is attatched to buttons in the login, it flips the div (for fancy purposes)
     var container = document.getElementById('login-flipper');
     var backButton = document.getElementById('backToLoginButton');
-    var loginButton = document.getElementById('login-submit-button')
+    var loginButton = document.getElementById('login-submit-button');
     backButton.innerHTML = "I'm Not a Student!";
     loginButton.setAttribute("onClick", "goToStudentDash()");
     container.style.webkitTransform = "rotateY(180deg)";
@@ -103,6 +103,52 @@ function submitTo_DB(){
     ref.push(data);
 }
 //</editor-fold>
+
+function post_job_to_db(){
+
+    //Getting input values from page
+    var job_class = document.getElementById("job_class").value;
+    var job_title = document.getElementById("job_title").value;
+    var job_location = document.getElementById("job_location").value;
+    var job_type = document.getElementById("job_type").value;
+    var job_salary = document.getElementById("job_salary").value;
+    var job_email_contact = document.getElementById("job_email_contact").value;
+    var job_description = document.getElementById("job_description").value;
+
+
+
+    console.log(job_class, job_title, job_location, job_type, job_salary, job_email_contact, job_description);
+
+    //Creating data
+    var job_data= {
+        job_class:job_class,
+        job_title:job_title,
+        job_location:job_location,
+        job_type:job_type,
+        job_salary:job_salary,
+        job_email_contact:job_email_contact,
+        job_description:job_description
+
+    };
+
+    //Pushes data to the DB
+    ref.push(job_data);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //<editor-fold desc="FUNCTION: Check to see which page we're currently on">
 //This if statement will check to see if the page is the student dashboard; If we are on the student dashboard
