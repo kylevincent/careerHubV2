@@ -133,6 +133,18 @@ function post_job_to_db(){
 
     //Pushes data to the DB
     ref.push(job_data);
+
+
+    //takes page back to emp dash
+    window.location.href = "../../../../../careerHubV2/public/root/employerDash/employerDashIndex.html";
+
+
+}
+
+
+
+function get_job_from_firebase() {
+
 }
 
 
