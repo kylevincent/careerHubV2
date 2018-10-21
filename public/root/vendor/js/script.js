@@ -152,16 +152,6 @@ function get_job_from_firebase() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 //<editor-fold desc="FUNCTION: Check to see which page we're currently on">
 //This if statement will check to see if the page is the student dashboard; If we are on the student dashboard
 // then run the job fetching code.
@@ -198,13 +188,13 @@ function gotData(data){
     for (var i = 0; i < keys.length; i++){
         //calling in values from the database
         var k = keys[i];
-        var titl = jobs[k].title;
-        var desc = jobs[k].description;
-        var email = jobs[k].email;
-        var jpay = jobs[k].jobPay;
-        // var location = jobs[k].jobLocation;
-        // var jtype = jobs[k].jobType;
-        // var jclass = jobs[k].jobClass;
+        var titl = jobs[k].job_title;
+        var desc = jobs[k].job_description;
+        var email = jobs[k].job_email_contact;
+        var jpay = jobs[k].job_salary;
+        var location = jobs[k].job_location;
+        var jtype = jobs[k].job_type;
+        var jclass = jobs[k].job_class;
 
         console.log(titl, desc, jpay, email);
 
@@ -221,11 +211,11 @@ function gotData(data){
         var leftP4 = document.createElement("p");
 
         //Assigning values from the database into text notes
-        var leftText1 = document.createTextNode(titl+":");
-        var leftText2 = document.createTextNode(jpay+":");
-        // var leftText3 = document.createTextNode(location+":");
-        // var leftText4 = document.createTextNode(jtype);
-        // var topText = document.createTextNode(jclass);
+        var leftText1 = document.createTextNode(titl+" - ");
+        var leftText2 = document.createTextNode(jpay+" - ");
+        var leftText3 = document.createTextNode(location+" - ");
+        var leftText4 = document.createTextNode(jtype);
+        var topText = document.createTextNode(jclass);
         var middleText = document.createTextNode(desc);
         var rightText = document.createTextNode(email);
         var resumeText = document.createTextNode("Apply");
@@ -238,9 +228,9 @@ function gotData(data){
         leftP1.appendChild(leftText1);
         leftP2.appendChild(leftText2);
         resumeBtn.appendChild(resumeText);
-        top_container.appendChild(document.createTextNode("wowww ayylmao, job classification"));
-        leftP3.appendChild(document.createTextNode("location"));
-        leftP4.appendChild(document.createTextNode(":job type"));
+        top_container.appendChild(topText);
+        leftP3.appendChild(leftText3);
+        leftP4.appendChild(leftText4);
         left_container.appendChild(leftP3);
         left_container.appendChild(leftP4);
 
