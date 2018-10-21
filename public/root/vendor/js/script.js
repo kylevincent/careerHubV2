@@ -239,6 +239,7 @@ function gotData(data){
         leftP1.appendChild(leftText1);
         leftP2.appendChild(leftText2);
         resumeBtn.appendChild(resumeText);
+        submitResume.appendChild(submitResumeText);
         top_container.appendChild(document.createTextNode("wowww ayylmao, job classification"));
         leftP3.appendChild(document.createTextNode("location"));
         leftP4.appendChild(document.createTextNode(":job type"));
