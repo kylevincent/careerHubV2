@@ -14,6 +14,8 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 var ref = database.ref('jobs');
+
+
 //</editor-fold>
 
 //<editor-fold desc="FUNCTION: For loading/fading the screen loading gif">
@@ -138,14 +140,21 @@ function post_job_to_db(){
     //takes page back to emp dash
     window.location.href = "../../../../../careerHubV2/public/root/employerDash/employerDashIndex.html";
 
-
 }
-
-
 
 function get_job_from_firebase() {
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -207,6 +216,7 @@ function gotData(data){
         var middle_container = document.createElement("div");
         var right_container = document.createElement("div");
         var resumeBtn = document.createElement("input");
+        var submitResume = document.createElement("BUTTON");
         var leftP3 = document.createElement("p");
         var leftP4 = document.createElement("p");
 
@@ -218,7 +228,8 @@ function gotData(data){
         var topText = document.createTextNode(jclass);
         var middleText = document.createTextNode(desc);
         var rightText = document.createTextNode(email);
-        var resumeText = document.createTextNode("Apply");
+        var resumeText = document.createTextNode("Upload");
+        var submitResumeText = document.createTextNode("Submit!");
 
         //adding the text to left, middle, and right divs
         left_container.appendChild(leftP1);
@@ -228,9 +239,9 @@ function gotData(data){
         leftP1.appendChild(leftText1);
         leftP2.appendChild(leftText2);
         resumeBtn.appendChild(resumeText);
-        top_container.appendChild(topText);
-        leftP3.appendChild(leftText3);
-        leftP4.appendChild(leftText4);
+        top_container.appendChild(document.createTextNode("wowww ayylmao, job classification"));
+        leftP3.appendChild(document.createTextNode("location"));
+        leftP4.appendChild(document.createTextNode(":job type"));
         left_container.appendChild(leftP3);
         left_container.appendChild(leftP4);
 
@@ -243,6 +254,9 @@ function gotData(data){
         resumeBtn.setAttribute("class", "custom-file-input");
         resumeBtn.setAttribute("type", "file");
         resumeBtn.setAttribute("aria-describedby", "inputGroupFileAddon01");
+        submitResume.setAttribute("class", "file-submit");
+        submitResume.setAttribute("onclick", "uploadFile()");
+        submitResume.setAttribute("id", "resumeFile")
         top_container.setAttribute("id", "jobDisplayDiv-post-header");
 
         //adding containers to main div
@@ -251,6 +265,7 @@ function gotData(data){
         main_container.appendChild(middle_container);
         main_container.appendChild(right_container);
         main_container.appendChild(resumeBtn);
+        main_container.appendChild(submitResume);
 
 
         //fetching the main div on the doc and adding the maincontainer to it
@@ -350,6 +365,26 @@ jQuery(document).ready(function(){
 });
 //</editor-fold>
 
+var selectedFile;
+
+// $('#file').on('change', function(event){
+//     selectedFile = event.target.files[0];
+// }
+
+function uploadFile() {
+    var filename = document.getElementById('inputGroupFileAddon01').files.item(0).name;
+    window.alert("file name: " + filename)
+    var filename = selectedFile.name;
+    var storageRef = firebase.storage().ref('/resumes/' + filename);
+    var uploadTask = storageRef.put(selectedFile);
+    uploadTask.on("state_changed", function (snapshot) {
+
+    }, function (error) {
+
+    }, function () {
+        var downloadURL = uploadTask.snapshot.downloadURL;
+    });
+}
 
 
 
