@@ -216,7 +216,7 @@ function gotData(data){
         var leftP2 = document.createElement("p");
         var middle_container = document.createElement("div");
         var right_container = document.createElement("div");
-        var resumeBtn = document.createElement("BUTTON");
+        var resumeBtn = document.createElement("input");
         var leftP3 = document.createElement("p");
         var leftP4 = document.createElement("p");
 
@@ -249,8 +249,10 @@ function gotData(data){
         middle_container.setAttribute("id", "jobDisplayDiv-post-desc");
         right_container.setAttribute("id", "jobDisplayDiv-post-email");
         main_container.setAttribute("id", "jobDisplayDiv-post-container");
-        resumeBtn.setAttribute("id", "applyBtn");
-        resumeBtn.setAttribute("Class", "btn btn-outline-primary");
+        resumeBtn.setAttribute("id", "inputGroupFile01");
+        resumeBtn.setAttribute("class", "custom-file-input");
+        resumeBtn.setAttribute("type", "file");
+        resumeBtn.setAttribute("aria-describedby", "inputGroupFileAddon01");
         top_container.setAttribute("id", "jobDisplayDiv-post-header");
 
         //adding containers to main div
