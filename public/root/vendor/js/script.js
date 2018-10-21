@@ -374,7 +374,7 @@ var selectedFile;
 
 function uploadFile() {
     var filename = document.getElementById('inputGroupFileAddon01').files.item(0).name;
-    window.alert("file name: " + filename)
+    window.alert("file name: " + filename);
     var filename = selectedFile.name;
     var storageRef = firebase.storage().ref('/resumes/' + filename);
     var uploadTask = storageRef.put(selectedFile);
