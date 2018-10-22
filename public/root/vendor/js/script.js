@@ -221,9 +221,9 @@ function gotData(data){
         var leftP4 = document.createElement("p");
 
         //Assigning values from the database into text notes
-        var leftText1 = document.createTextNode(titl+" - ");
-        var leftText2 = document.createTextNode(jpay+" - ");
-        var leftText3 = document.createTextNode(location+" - ");
+        var leftText1 = document.createTextNode(titl+" ");
+        var leftText2 = document.createTextNode(jpay+" ");
+        var leftText3 = document.createTextNode(location+"  ");
         var leftText4 = document.createTextNode(jtype);
         var topText = document.createTextNode(jclass);
         var middleText = document.createTextNode(desc);
@@ -237,12 +237,13 @@ function gotData(data){
         middle_container.appendChild(middleText);
         right_container.appendChild(rightText);
         leftP1.appendChild(leftText1);
-        leftP2.appendChild(leftText2);
+        leftP1.appendChild(leftText2);
+        leftP1.appendChild(leftText3);
         resumeBtn.appendChild(resumeText);
         submitResume.appendChild(submitResumeText);
-        top_container.appendChild(document.createTextNode("wowww ayylmao, job classification"));
-        leftP3.appendChild(document.createTextNode("location"));
-        leftP4.appendChild(document.createTextNode(":job type"));
+        top_container.appendChild(document.createTextNode(" "));
+        leftP3.appendChild(document.createTextNode(" "));
+        leftP4.appendChild(document.createTextNode(" "));
         left_container.appendChild(leftP3);
         left_container.appendChild(leftP4);
 
@@ -384,8 +385,11 @@ function uploadFile() {
 
     }, function () {
         var downloadURL = uploadTask.snapshot.downloadURL;
+        uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+            console.log('File available at', downloadURL);
     });
-}
+})
+};
 
 
 
