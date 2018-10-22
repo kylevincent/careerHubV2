@@ -16,6 +16,7 @@ var database = firebase.database();
 var ref = database.ref('jobs');
 
 
+
 //</editor-fold>
 
 //<editor-fold desc="FUNCTION: For loading/fading the screen loading gif">
@@ -194,6 +195,7 @@ function gotData(data){
     document.getElementById("jobDisplayDiv").innerHTML = "";
 
     //running through a for loop based on the ammount of items in the db
+    var count = 1;
     for (var i = 0; i < keys.length; i++){
         //calling in values from the database
         var k = keys[i];
@@ -252,13 +254,14 @@ function gotData(data){
         middle_container.setAttribute("id", "jobDisplayDiv-post-desc");
         right_container.setAttribute("id", "jobDisplayDiv-post-email");
         main_container.setAttribute("id", "jobDisplayDiv-post-container");
-        resumeBtn.setAttribute("id", "inputGroupFile01");
+        resumeBtn.setAttribute("id", "inputGroupFile0"+count);
         resumeBtn.setAttribute("class", "custom-file-input");
         resumeBtn.setAttribute("type", "file");
-        resumeBtn.setAttribute("aria-describedby", "inputGroupFileAddon01");
+        resumeBtn.setAttribute("aria-describedby", "inputGroupFileAddon0"+count);
+        count += 1;
         submitResume.setAttribute("class", "file-submit");
         submitResume.setAttribute("onclick", "uploadFile()");
-        submitResume.setAttribute("id", "resumeFile")
+        submitResume.setAttribute("id", "resumeFile");
         top_container.setAttribute("id", "jobDisplayDiv-post-header");
 
         //adding containers to main div
@@ -369,16 +372,18 @@ jQuery(document).ready(function(){
 
 var selectedFile;
 
-// $('#file').on('change', function(event){
-//     selectedFile = event.target.files[0];
-// }
 
 function uploadFile() {
-    var filename = document.getElementById('inputGroupFileAddon01').files.item(0).name;
-    window.alert("file name: " + filename);
-    var filename = selectedFile.name;
-    var storageRef = firebase.storage().ref('/resumes/' + filename);
-    var uploadTask = storageRef.put(selectedFile);
+    // var filename = document.getElementById('inputGroupFileAddon01').files.item(0).name;
+    selectedFile = document.getElementById('inputGroupFileAddon01').files.item(0);
+    // window.alert("file name: " + filename);
+    // var filename = selectedFile.name;
+    // var storageRef = firebase.storage().ref(filename);
+    // var uploadTask = storageRef.put(selectedFile);
+
+
+    var uploadTask = firebase.storage().ref().put(selectedFile);
+
     uploadTask.on("state_changed", function (snapshot) {
 
     }, function (error) {
@@ -389,7 +394,7 @@ function uploadFile() {
             console.log('File available at', downloadURL);
     });
 })
-};
+}
 
 
 
